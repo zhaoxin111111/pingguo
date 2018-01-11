@@ -1,0 +1,739 @@
+
+/*
+* @Author: Lenovo
+* @Date:   2018-01-04 09:58:32
+* @Last Modified by:   lenovo 
+* @Last Modified time: 2018-01-11 14:19:14
+*/
+@import url("base.css");
+@font-face {
+  font-family: 'iconfont';  /* project id 533717 */
+  src: url('http://at.alicdn.com/t/font_533717_3vtydyrtimcgnwmi.eot');
+  src: url('http://at.alicdn.com/t/font_533717_3vtydyrtimcgnwmi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_533717_3vtydyrtimcgnwmi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_533717_3vtydyrtimcgnwmi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_533717_3vtydyrtimcgnwmi.svg#iconfont') format('svg');
+}
+.iconfont
+{
+	font-family:'iconfont';
+}
+i
+{
+	font-style: normal;
+}
+.header_top{
+	width: 100%;
+	height: 40px;
+	background: #444444;
+}
+.header_top .main{
+	height: 100%;
+	background: #444444;
+	margin: 0 auto;
+}
+.header_top .main span{
+	float: right;
+	font-size: 12px;
+	color: #A8A8AA;
+	line-height: 40px;
+}
+
+nav{
+	width: 100%;
+	height: 44px;
+	background: #2E3634;
+	/* display: flex;
+	justify-content: space-between; */
+}
+
+nav ul{
+	/* width: 976px; */
+	height: 100%;
+	background: #313433;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul a{
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 44px;
+}
+.icon1{
+	 font-size: 14px;
+    color: #ffffff;
+    line-height: 44px;
+}
+nav ul a:hover{
+	color: #ccc;
+}
+.icon1:hover{
+    color: #ccc;
+}
+/* 主要商品 */
+.main_com{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.big{
+	width: 100%;
+	/* height: 582px; */
+	background:#FAFAF9;
+	/* margin-bottom: 12px; */
+}
+.big a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.big a h1{
+	/* font-size: 40px; */
+	color: #111111;
+	/* line-height: 62px; */
+	text-align: center;
+	/* margin-top: 88px; */
+}
+.big a h2{
+	/* font-size: 20px; */
+	color: #111111;
+	/* line-height: 46px; */
+	text-align: center;
+}
+.big a div{
+	/* width: 909px;
+	height: 194px; */
+	background: yellowgreen;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	/* bottom: 112px; */
+	/* background: url('../img/iphone_x_large.jpg') no-repeat center center; */
+}
+/* iphone8 */
+.main_com1{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 12px;
+}
+.small{
+	background: #f9f0eb;
+	margin-top: 12px;
+
+}
+.small a{
+	display: block;
+	overflow: hidden;
+}
+.small a h1{
+	color: #333;
+	text-align: center;
+}
+.small a h2{
+
+	color: #333;
+
+	text-align: center;
+}
+.small a div{
+	background: yellowgreen;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+    bottom: 0;
+}
+
+
+/* >1024px */
+@media screen and (min-width: 1024px){
+	.header_top .main{
+		width:976px;
+	}
+	.box{
+		display: block;
+	}
+	.box1{
+		display: none;
+	}
+	nav ul{
+		width: 976px;
+	}
+	.big{
+		height: 582px;
+	}
+	.big a h1{
+	font-size: 40px;
+	line-height: 62px;
+	margin-top: 88px;
+    }
+    .big a h2{
+	font-size: 20px;
+	line-height: 46px;
+    }
+    .big a div{
+	width: 909px;
+	height: 194px;
+	bottom: 112px;
+	background: url('../img/iphone_x_large.jpg') no-repeat center center;
+    }
+    .small{
+	height: 592px;
+}
+
+.small a h1{
+	font-size: 42px;
+	margin-top: 88px;
+	line-height: 62px;
+}
+.small a h2{
+	font-size: 20px;
+	line-height: 46px;
+}
+.small a div{
+	width: 561px;
+	height: 359px;
+	background: url('../img/iphone_8_large.jpg') no-repeat center center;
+	background-size: 561px 359px;
+}
+
+}
+/* 768px-1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.box1{
+		display: none;
+	}
+	.box{
+		display: block;
+	}
+	.box .max_nav{
+		padding: 0 20px;
+	}
+	.big{
+		height: 582px;
+	}
+	.big a h1{
+	font-size: 34px;
+	line-height: 62px;
+	margin-top: 100px;
+    }
+    .big a h2{
+	font-size: 16px;
+	line-height: 46px;
+    }
+    .big a div{
+	width: 704px;
+	height: 148px;
+	bottom: 144px;
+	background: url('../img/iphone_x_medium.jpg') no-repeat center center;
+	background-size: 704px 148px;
+    }
+    .small{
+	height: 582px;
+}
+.small a h1{
+	font-size: 34px;
+	margin-top: 58px;
+}
+.small a h2{
+	font-size: 20px;
+	line-height: 46px;
+}
+.small a div{
+	width: 549px;
+	height: 388px;
+	background: url('../img/iphone_8_medium.jpg') no-repeat center center;
+}
+    
+}
+/* <768px */
+@media screen and (max-width: 768px){
+	
+    .box{
+		 display: none; 
+	}
+	.box1{
+		display: block;
+	}
+	nav ul{
+		padding: 0 20px;
+	}
+	.big{
+		height: 500px;
+	}
+	.big a h1{
+	font-size: 24px;
+	line-height: 39px;
+	margin-top: 38px;
+    }
+    .big a h2{
+	font-size: 14px;
+	line-height: 32px;
+    }
+    .big a div{
+	width: 167px;
+	height: 333px;
+	bottom: 38px;
+	background: url('../img/iphone_x_small.jpg') no-repeat center center;
+	background-size: 167px 333px;
+    }
+    .small{
+	width: 100%;
+	height: 582px;
+	background: #f9f0eb;
+/* 	margin-bottom: 12px; */
+}
+
+.small a h1{
+	font-size: 24px;
+	/* color: #333; */
+	margin-top: 38px;
+	line-height: 39px;
+	/* text-align: center; */
+}
+.small a h2{
+	font-size: 20px;
+	line-height: 46px;
+}
+.small a div{
+	width: 267px;
+	height: 357px;
+	/* background-size: 267px 357px; */
+	background: url('../img/iphone_8_small.jpg') no-repeat center center;
+}
+	    }
+.list{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.list li{
+	box-sizing: border-box;
+	float: left;
+	background: #fafafa;
+	position: relative;
+}
+.list li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.list li a h1{
+	color: #111;
+	text-align: center;
+}
+.list li a h2{
+	color: #111;
+	text-align: center;
+}
+@media screen and (min-width:1024px){
+    .list li{
+	    width: 50%;
+	    height: 580px;
+	    border-bottom: 12px solid #fff;
+	    border-right: 12px solid #fff;
+    }
+    .list li:nth-child(2n+1){
+	    border-left: 12px solid #fff;
+    }
+    .list li a h1{
+	    font-size: 30px;
+	    line-height: 45px;
+	    margin-top: 50px;
+    }
+    .list li a h2{
+	    font-size: 17px;
+	    line-height: 33px;
+    }
+    .list li a div{
+	    width: 385px;
+	    height: 304px;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    margin-left: auto;
+    	margin-right: auto;
+	    bottom: 75px;
+	    background: url('../img/5.jpg')no-repeat center center;
+        background-size: 385px 304px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .list li{
+    	width: 50%;
+	    height: 490px;
+	    border-bottom: 12px solid #fff;
+	    border-right: 12px solid #fff;
+    }
+    .list li:nth-child(2n+1){
+	    border-left: 12px solid #fff;
+    }
+    .list li a h1{
+	    font-size: 26px;
+	    line-height: 40px;
+    	margin-top: 40px;
+    }
+    .list li a h2{
+    	font-size: 17px;
+	    line-height: 30px;
+    }
+    .list li a div{
+	    width: 269px;
+	    height: 212px;
+	    position: absolute;
+    	left: 0;
+	    right: 0;
+	    margin-left: auto;
+    	margin-right: auto;
+	    bottom: 99px;
+	    background: url('../img/6.jpg') no-repeat center center;
+        background-size: 269px 212px;
+    }
+}
+@media screen and (max-width:768px){
+    .list li{
+	    width: 100%;
+	    height: 500px;
+	    margin-bottom: 12px;
+    }
+    .list li a h1{
+	    font-size: 22px;
+	    line-height: 35px;
+	    margin-top: 30px;
+    }
+    .list li a h2{
+	    font-size: 17px;
+	    line-height: 27px;
+    }
+    .list li a div{
+	    width: 244px;
+	    height: 193px;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+	    bottom: 105px;
+	    background: url('../img/7.jpg')no-repeat center center;
+        background-size: 244px 193px;
+    }
+}
+
+
+
+
+
+
+.box111{
+	width: 100%;
+	height: auto;
+	background: #f2f2f2;
+}
+.zhandian{
+	height: 335px;
+	background: #f2f2f2;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.zhandian li{
+    margin-top: 45px;
+}
+.zhandian li h1{
+	font-size: 10px;
+	color: #333333;
+}
+.zhandian li a{
+	display: block;
+	margin-top: 8px;
+	color: #555555;
+	font-size: 10px;
+}
+.zhandian li div h1{
+	font-size: 10px;
+	color: #333333;
+}
+.zhandian li div a{
+	display: block;
+	margin-top: 8px;
+	color: #555555;
+	font-size: 10px;
+}
+.l3{
+	margin-top: 28px;
+}
+.l2 a:hover{
+	color: #000000;
+}
+.l3 a:hover{
+	color: #000000;
+}
+.zhandian li a:hover{
+	color: #000000;
+	text-decoration: underline;
+}
+
+
+
+
+
+.box2{
+	width: 100%;
+	height: auto;
+	background: #f2f2f2;
+}
+.zhandian2{
+	width: 90%;
+	height: 280px;
+	background: #f2f2f2;
+	margin: 0 auto;
+}
+.zhandian2 li{
+	width: 100%;
+	height: 39px;
+	border-bottom: 1px solid #D6D6D6;
+}
+.zhandian2 li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.l8{
+	float: left;
+	font-size: 10px;
+	color: #555555;
+	line-height: 40px;
+}
+.l9{
+	float: right;
+	font-size: 10px;
+	color: #555555;
+	line-height: 40px;
+}
+.zhandian2 li a:hover div{
+	color: #000000;
+
+
+}
+
+
+
+
+.box3{
+	width: 100%;
+	height: 94px;
+	margin: 0 auto;
+	padding-top: 30px;
+	background: #f2f2f2;
+}
+.zhandian3{
+	height: 30px;
+	margin: 0 auto;
+}
+.zhandian3 div{
+	font-size: 10px;
+    color: #888;
+    float: left;
+    line-height: 30px;
+
+}
+.zhandian3 a{
+	display: block;
+	float: left;
+	font-size: 10px;
+    color: #5da2d9;
+    line-height: 30px;
+}
+.zhandian3 a:hover{
+	text-decoration: underline;
+}
+
+
+
+.zhandian4{
+	height: 30px;
+	margin: 0 auto;
+	position: relative;
+}
+.zhandian4 li{
+	float: left;
+	color: #888;
+	font-size: 10px;
+	line-height: 30px;
+}
+.zhandian4 div{
+	float: left;
+	font-size: 10px;
+	line-height: 30px;
+	color: #888;
+}
+.zhandian4 li a{
+	display: block;
+	margin: 0 5px;
+	color: #888;
+	font-size: 10px;
+}
+.zhandian4 li a:hover{
+	color: #000000;
+	text-decoration: underline;
+}
+.zhandian4 li:first-child{
+	padding-right: 1px;
+}
+.yuan{
+	
+	font-family: 'iconfont';
+	color: red;
+	float: left;
+}
+.zi{
+	font-size: 10px;
+	color: #888;
+	float: left;
+}
+.zhandian5{
+	margin: 0 auto;
+	height: 30px;
+}
+.zhandian5 li{
+    font-size: 10px;
+    color: #888;
+    float: left;
+}
+.zhandian5 l15:hover{
+    text-decoration: underline;
+}
+.box4{
+	width: 100%;
+	height: 137px;
+	margin: 0 auto;
+	padding-top: 30px;
+	background: #f2f2f2;
+}
+.l20{
+	font-size: 10px;
+	color: #888;
+}
+
+
+@media screen and (min-width:1024px){
+    .box111{
+    	display: block;
+    }
+    .box2{
+    	display: none;
+    }
+    .zhandian{
+    	width: 976px;
+    }
+    .box3{
+    	display: block;
+    }
+    .box4{
+    	display: none;
+    }
+    .zhandian3{
+    	width: 976px;
+    	border-bottom: 1px solid #d6d6d6;
+    }
+    .zhandian4{
+    	width: 976px;
+    }
+    .zhandian5{
+    	width: 976px;
+    }
+    .zhongguo{
+	position: absolute;
+	right: 16px;
+	top: 0;
+}
+}
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .box111{
+    	display: block;
+    }
+    .box2{
+    	display: none;
+    }
+    .zhandian{
+    	padding: 0 16px;
+    }
+    .box3{
+    	display: block;
+    }
+    .box4{
+    	display: none;
+    }
+    .zhandian3{
+    	margin: 0 16px;
+    	border-bottom: 1px solid #d6d6d6;
+    }
+    .zhandian4{
+    	padding: 0 16px;
+    }
+    .zhandian5{
+    	padding: 0 16px;
+    }
+    .zhongguo{
+	position: absolute;
+	right: 16px;
+	top: 0;
+}
+}
+@media screen and (max-width:768px){
+    .box111{
+    	display: none;
+    }
+    .box2{
+    	display: block;
+    }
+    .box3{
+    	display: none;
+    }
+    .box4{
+    	display: block;
+    }
+    .zhandian3{
+    	padding: 0 16px;
+    }
+    .zhandian4{
+    	padding: 0 11px;
+    }
+    .zhandian5{
+    	padding: 0 16px;
+    }
+    .l20{
+    	padding: 0 16px;
+    }
+    .zhongguo1{
+    	display: block;
+    	width: 100px;
+    	height: 30px;
+    	margin-left: 16px;
+    }
+    .zi{
+    	line-height: 30px;
+    }
+    .yuan{
+    	margin-top: 10px;
+    }
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 533731 */
+  src: url('http://at.alicdn.com/t/font_533731_2xx8rwyt36vibe29.eot');
+  src: url('http://at.alicdn.com/t/font_533731_2xx8rwyt36vibe29.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_533731_2xx8rwyt36vibe29.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_533731_2xx8rwyt36vibe29.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_533731_2xx8rwyt36vibe29.svg#iconfont') format('svg');
+}	    
